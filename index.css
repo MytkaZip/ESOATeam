@@ -1,23 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Prompt:wght@900&family=Roboto&display=swap');
 
-body {
+
+body{
   background-color: #AFD3E2;
 }
 
-#calculadora {
-  height: 100%;
-  position: relative;
-  z-index: 1;
-  background: #ffffffd3;
-  max-width: 360px;
-  margin: 5% auto;
-  padding: 45px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  font-family: "Montserrat";
-  border-radius: 1%;
-}
-
-#calculadora h1 {
+#calculadora h1{
   font-weight: 1000;
   letter-spacing: 3px;
   text-align: center;
@@ -25,49 +13,67 @@ body {
   color: #2f3d44;
 }
 
-#calculadora p {
+#calculadora p{
   text-align: center;
+}
+
+#resp{
+  margin-top: 20px;
+}
+
+#calculadora {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: #ffffffd3;
+    max-width: 360px;
+    margin: 5% auto 5%;
+    padding: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    font-family: "Montserrat";
+    border-radius: 1%;
 }
 
 #numeros input {
-  font-family: "Montserrat", sans-serif;
-  outline: 0;
-  background: #19a7ce0c;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    outline: 0;
+    background: #19a7ce0c;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
-#contas input {
-  border-radius: 100%;
-  width: 20px;
-  top: 30px;
-  left: 20px;
-  z-index: 5;
-  transition: border .25s linear;
-  text-align: start;
+#contas input{
+    border-radius: 100%;
+    width: 20px;
+    top: 30px;
+    left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    text-align: start;
 }
 
 #calculadora button {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background: #19A7CE;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #2c2c2c;
-  font-size: 15px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  font-weight: bold;
-}
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #19A7CE;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #2c2c2c;
+    font-size: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    font-weight: bold;
+  }
 
-#resp {
+#resp{
   font-size: 30px;
   text-align: center;
-  line-height: 80%;
+  line-height:70%;
 }
