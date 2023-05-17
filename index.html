@@ -11,40 +11,43 @@
     
 </head>
 <body>
+    <div id="calculadora">
+        <div>
+            <h1>CALCULADORA</h1>
+            <p>Atividade do Capítulo 4 | Fase 3</p> 
+        </div>
+    
+    <div class="container pt-5">    
+            
+        <div id="numeros">
+            <input id="num1" type="number" placeholder="Número 1"> <br>
+            <input id="num2" type="number" placeholder="Número 2"> <br>
+            <br>
+        </div>
 
-    <div class="container-fluid p-5 bg-dark text-white text-center">
-        <h1>Calculadora</h1>
-        <p>Atividade do Capítulo 4 | Fase 3</p> 
-    </div>
+        <div id="contas">
+            <input type="radio" name="calc" id="soma"/>
+            <label for="soma"> Soma</label>
+            <br>
 
-    <div class="container pt-5 text-center">
-        <label for="num1">Número 1:   </label><input id="num1" type="number"> <br>
-        <label for="num2">Número 2:   </label><input id="num2" type="number"> <br>
-        <br>
+            <input type="radio" name="calc" id="subtracao"/>
+            <label for="subtracao"> Subtração</label>
+            <br>
 
-        <input type="radio" name="calc" id="soma"/>
-        <label for="soma"> Soma</label>
-        <br>
+            <input type="radio" name="calc" id="multiplicacao"/>
+            <label for="multiplicacao"> Multiplicação</label>
+            <br>
 
-        <input type="radio" name="calc" id="subtracao"/>
-        <label for="subtracao"> Subtração</label>
-        <br>
-
-        <input type="radio" name="calc" id="multiplicacao"/>
-        <label for="multiplicacao"> Multiplicação</label>
-        <br>
-
-        <input type="radio" name="calc" id="divisao"/>    
-        <label for="divisao"> Divisão</label>
-        <br>
-        <br>
-
+            <input type="radio" name="calc" id="divisao"/>    
+            <label for="divisao"> Divisão</label>
+            <br>
+            <br>
+        </div>  
         <button onclick="main()" class="btn btn-dark">Calcular</button>
         <br>
-
-        <p>Resposta: </p><div id="resp"></div>
+    <div id="resp"></div></div>
 </div>
-
+</div>
     <script>
             function main()
             {
@@ -90,6 +93,7 @@
         }
 
     </script>
+
 
 </body>
 </html>
