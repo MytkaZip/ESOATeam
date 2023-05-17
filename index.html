@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIAP | Fase 3 | Capítulo 4</title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+
+    <form>
+        <label for="num1">Número 1: </label><input id="num1" type="number"> <br>
+        <label for="num2">Número 2: </label><input id="num2" type="number"> <br>
+        <br>
+
+        <input type="radio" name="calc" id="soma"/>
+        <label for="soma"> Soma</label>
+        <br>
+
+        <input type="radio" name="calc" id="subtracao"/>
+        <label for="subtracao"> Subtração</label>
+        <br>
+
+        <input type="radio" name="calc" id="multiplicacao"/>
+        <label for="multiplicacao"> Multiplicação</label>
+        <br>
+
+        <input type="radio" name="calc" id="divisao"/>    
+        <label for="divisao"> Divisão</label>
+        <br>
+        <br>
+
+        <button onclick="main()">Calcular</button>
+        <br>
+
+        <p>Resposta: </p><div id="resp"></div>
+    </form>
+
+    <script>
+            function main()
+            {
+                var resp = document.getElementById('resp');
+                var num1 = parseFloat(document.getElementById("num1").value);
+                var num2 = parseFloat(document.getElementById("num2").value);
+                var texto='';
+    
+            if(document.getElementById('soma').checked)
+                texto = soma(num1, num2);
+            if(document.getElementById('subtracao').checked)
+                texto = subtracao(num1, num2);
+            if(document.getElementById('multiplicacao').checked)
+                texto = multiplicacao(num1, num2);
+            if(document.getElementById('divisao').checked)
+                texto = divisao(num1, num2);
+    
+            resp.innerHTML = texto;
+            }
+    
+        function soma(x, y)
+        {
+        
+        return (x+y);
+        }
+    
+        function subtracao(x, y)
+        {
+        
+        return (x-y);
+        }
+    
+        function multiplicacao(x, y)
+        {
+        
+        return (x*y);
+        }
+    
+        function divisao(x, y)
+        {
+        
+        return (x/y);
+        }
+
+    </script>
+
+</body>
+</html>
